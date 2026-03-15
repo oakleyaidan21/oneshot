@@ -1,5 +1,5 @@
 import { Link } from "@inertiajs/react"
-import { BookOpen, Folder, LayoutGrid } from "lucide-react"
+import { Bean, BookOpen, Coffee, Folder, LayoutGrid } from "lucide-react"
 
 import { NavFooter } from "@/components/nav-footer"
 import { NavMain } from "@/components/nav-main"
@@ -13,7 +13,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import { dashboardPath } from "@/routes"
+import { coffeesPath, dashboardPath } from "@/routes"
 import type { NavItem } from "@/types"
 
 import AppLogo from "./app-logo"
@@ -23,6 +23,11 @@ const mainNavItems: NavItem[] = [
     title: "Dashboard",
     href: dashboardPath(),
     icon: LayoutGrid,
+  },
+  {
+    title: "Coffees",
+    href: coffeesPath(),
+    icon: Bean,
   },
 ]
 
